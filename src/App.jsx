@@ -3,7 +3,7 @@ import React from 'react'
 const App = () => {
   return (
     <div>
-      <h1>Pilla VAISHU</h1>
+      <h1>Topper vaishu pop</h1>
     </div>
   )
 }
