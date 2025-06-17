@@ -5,7 +5,7 @@ import "./navbar.css";
 const Navbar = () => {
   return (
     <div className="title">
-      <h1>ChildCare</h1>
+      <Link to="/"><h1>ChildCare</h1></Link>
       <div className="navbar">
         <p><Link to="/">Home</Link></p>
         <p><Link to="/activities">Activities</Link></p>
