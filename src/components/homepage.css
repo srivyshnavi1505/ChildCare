@@ -1,0 +1,93 @@
+.homepage-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.homepage-left {
+  flex: 1;
+  background-color: #fef8f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+}
+
+.homepage-left h1 {
+  font-size: 3rem;
+  color: #b84d2d;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.learn-btn {
+  padding: 12px 30px;
+  background-color: transparent;
+  border: 2px solid #b84d2d;
+  color: #b84d2d;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.learn-btn:hover {
+  background-color: #b84d2d;
+  color: white;
+}
+
+.homepage-right {
+  flex: 1;
+  background-color: #f5a595;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.homepage-img {
+  width: 70%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.homepage-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.body{
+    background-color: #F8EDEB;
+}
+@media screen and (max-width: 768px) {
+  .homepage-container {
+    flex-direction: column;
+  }
+
+  .homepage-left {
+    padding: 30px;
+    text-align: center;
+  }
+  .homepage-right {
+    padding: 30px;
+    flex: none;
+    height: auto;
+  }
+
+  .homepage-img {
+    width: 60%;
+    margin: 20px 0;
+  }
+
+  .homepage-left h1 {
+    font-size: 2.5rem;
+  }
+}
+
