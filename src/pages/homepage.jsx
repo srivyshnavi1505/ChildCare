@@ -1,17 +1,21 @@
+
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import '../components/homepage.css';
+import ImageGallery from '../components/ImageGallery.jsx';
 
 const Homepage = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <div className="homepage-container">
+    <div className="homepage-container" style={{ display: "flex", width: "100%" }}>
+      {/* LEFT SECTION */}
       <motion.div
         className="homepage-left"
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.7, ease: 'easeOut' }}
+        style={{ flex: 1, padding: '2rem' }}
       >
         <h1>ChildCare<br />Connect</h1>
         <motion.button
@@ -24,19 +28,18 @@ const Homepage = () => {
         </motion.button>
       </motion.div>
 
+      {/* RIGHT SECTION */}
       <motion.div
         className="homepage-right"
-        initial={{ opacity: 0, scale: 0.9 }}
+        initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.2 }}
+        style={{ flex: 0.7 }}
       >
-        <img
-          src="https://www.istockphoto.com/photo/brother-and-sister-packing-clothes-and-toy-in-the-donation-box-gm1314210487-402495042"
-          alt="ChildCare"
-          className="homepage-img"
-        />
+        <ImageGallery />
       </motion.div>
 
+      {/* MODAL */}
       <AnimatePresence>
         {showModal && (
           <motion.div
