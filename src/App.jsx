@@ -7,6 +7,7 @@ import Homepage from './pages/homepage'
 import Activities from './pages/activities'
 import Programmes from './pages/programmes'
 import Signup from './pages/signup'
+import Children from './pages/children'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path='/programmes' element={<Programmes />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
+        <Route path='/children' element={<Children />} />
         <Route path='*' element={<Error404 />} />
       </Routes>
 
