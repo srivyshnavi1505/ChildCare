@@ -20,8 +20,18 @@ mongoose.connect(dbURI)
     .catch((err)=> console.log(err));
 
 app.get('/', (req,res)=> {
-    console.log(req.ip);
+    console.log(req.ip, req.url);
     Children.find()
+        .then((result)=> {
+            res.json(result);
+        })
+        .catch(err=> console.log(err));
+});
+
+app.get('/:id', (req,res)=> {
+    const id=req.params.id;
+    console.log(req.ip, req.url);
+    Children.findById(id)
         .then((result)=> {
             res.json(result);
         })

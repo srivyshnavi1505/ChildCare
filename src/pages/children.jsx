@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Children = () => {
 
@@ -17,10 +18,12 @@ useEffect(()=> {
         <div>
             <h2>List of children: </h2>
             {children.map((child)=> (
-                <div className="child" key={child._id}>
+                <Link to={`/children/${child._id}`}>
+                    <div className="child" key={child._id}>
                     <h3>{child.name}</h3>
                     <p>{child.age}</p>
-                </div>
+                    </div>
+                </Link>
             ))}
         </div>
      );

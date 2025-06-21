@@ -1,8 +1,19 @@
+import { useNavigate } from "react-router-dom";
 
+const Login = ({loggedin,setloggedin}) => {
 
-const Login = () => {
+  const navigate=useNavigate();
+
+  const logincontrol= ()=> {
+    setloggedin(true);
+    navigate('/');
+  }
+
   return (
-    <div>Login using your details</div>
+    <div>
+      <h2>Login using your details: </h2>
+      <button onClick={logincontrol}>Login</button>
+      </div>
   )
 }
 
