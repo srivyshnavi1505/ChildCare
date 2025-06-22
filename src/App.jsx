@@ -9,6 +9,8 @@ import Programmes from './pages/programmes'
 import Signup from './pages/signup'
 import Children from './pages/children'
 import Child from './pages/child'
+import Celebration from './pages/celebration'
+
 
 const App = () => {
 
@@ -26,6 +28,7 @@ const App = () => {
         <Route path='/children' element={<Children />} />
         <Route path='/children/:id' element={<Child />} />
         <Route path='*' element={<Error404 />} />
+        <Route path="/celebration" element={<Celebration />} />
       </Routes>
 
     </div>

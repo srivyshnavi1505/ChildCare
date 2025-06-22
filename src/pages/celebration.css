@@ -1,0 +1,50 @@
+/* src/pages/celebration.css */
+
+.celebration-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.celebration-page h2 {
+  color: #b84d2d;
+  font-size: 2rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.celebration-calendar {
+  margin-bottom: 40px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.celebration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.celebration-form input,
+.celebration-form textarea,
+.celebration-form button {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.celebration-form button {
+  background-color: #b84d2d;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.celebration-form button:hover {
+  background-color: #8d3821;
+}
