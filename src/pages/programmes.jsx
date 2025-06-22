@@ -6,11 +6,15 @@ import CelebrationImg from '../assests/CelebrationImg.jpg';
 
 
 
-const Programmes = () => {
+const Programmes = ({loggedin}) => {
   const navigate = useNavigate();
 
   const handleCardClick = () => {
-    navigate('/celebration');
+    if (loggedin) {
+      navigate('/celebration');
+    }else{
+      navigate('/login');
+    }
   };
 return (
     <div className="programmes-container">
