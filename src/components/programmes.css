@@ -1,0 +1,67 @@
+.programmes-container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.programmes-container h1 {
+  font-size: 2.5rem;
+  color: #a1422d;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Card + Image Layout */
+.programmes-content {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Celebration Card */
+.celebration-card {
+  flex: 1 1 300px;
+  padding: 24px;
+  background: linear-gradient(135deg, #ffe0dc, #f6a89e);
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.celebration-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 16px rgba(0,0,0,0.15);
+}
+
+.celebration-card h2 {
+  font-size: 1.8rem;
+  color: #b84d2d;
+  margin-bottom: 10px;
+}
+
+.celebration-card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Image beside card */
+.celebration-image {
+  flex: 1 1 250px;
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.celebration-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+}
