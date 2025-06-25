@@ -2,7 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const Children = require('./models/Children');
-const Account = require('./models/Account');  // No function wrapper needed
+const Account = require('./models/Account');
+const Celebration = require('./models/Celebration');
 
 const app = express();
 app.use(express.urlencoded({ extended: true }));
@@ -67,6 +68,22 @@ app.post('/accounts', (req, res) => {
         .then(result => res.send(result))
         .catch(err => res.status(500).send(err));
 });
+
+app.get('/celebrations', (req,res) => {
+    console.log(req.ip, req.url);
+    Celebration.find()
+        .then(result => res.json(result))
+        .catch(err => res.send(err));
+});
+
+app.post('/celebrations', (req,res) => {
+    console.log(req.ip, req.url);
+    const celebration = new Celebration(req.body);
+
+    celebration.save()
+        .then(result=> res.send(result))
+        .catch(err => res.send(err));
+})
 
 app.get('/:id', (req, res) => {
     console.log(req.ip, req.url);
