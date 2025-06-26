@@ -7,25 +7,33 @@
   color: #333;
 }
 
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
 .title h1 {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #000;
 }
 
 .title a {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 .navbar {
   display: flex;
-  align-items: center;
   gap: 2rem;
 }
 
 .navbar p {
   margin: 0;
   font-weight: 500;
+  font-size: 1.05rem;
 }
 
 .navbar a {
@@ -45,27 +53,31 @@
   gap: 1rem;
   margin-left: auto;
 }
-
 .log-button,
-.sign-up-button,
-.logout {
-  padding: 8px 14px;
+.sign-up-button {
   background: #fff5f2;
   color: #a1422d;
   font-weight: 600;
-  border: none;
+  padding: 6px 16px;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .log-button:hover,
-.sign-up-button:hover,
-.logout:hover {
+.sign-up-button:hover {
   background: #ffd3c2;
 }
 
-.logout {
-  background: #a1422d;
-  color: #ffffff;
+.log-button button,
+.sign-up-button button {
+  background: none;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #a1422d;
+  cursor: pointer;
 }
