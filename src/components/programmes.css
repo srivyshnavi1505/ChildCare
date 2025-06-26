@@ -12,7 +12,7 @@
   margin-bottom: 40px;
 }
 
-/* Card + Image Layout */
+
 .programmes-content {
   display: flex;
   gap: 40px;
@@ -21,11 +21,10 @@
   flex-wrap: wrap;
 }
 
-/* Celebration Card */
 .celebration-card {
   flex: 1 1 300px;
   padding: 24px;
-  background: linear-gradient(135deg, #ffe0dc, #f6a89e);
+  background: #FFDCDC;
   border-radius: 16px;
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   cursor: pointer;
@@ -49,7 +48,6 @@
   color: #333;
 }
 
-/* Image beside card */
 .celebration-image {
   flex: 1 1 250px;
   max-width: 300px;

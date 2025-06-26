@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import {motion} from "framer-motion";
+import "../components/signup.css"; 
+
 
 const Signup = () => {
 
@@ -35,17 +38,32 @@ const Signup = () => {
     }
 
     return ( 
-        <div>
-            <h2>Create Account: </h2>
-            <form onSubmit={handlesubmit}>
-                <label>Username: </label>
-                <input type="text" required value={username} onChange={(e)=> setusername(e.target.value)} />
-                <label>Password: </label>
-                <input type="password" required value={password} onChange={(e)=> setpassword(e.target.value)} />
-                <button>Create Account</button>
-            </form>
-        </div>
-     );
+        <motion.div className="signup-container"
+            initial={{ y: -40, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ type: "spring", ease: "easeInOut", duration: 0.5 }}>
+                <h2 className="signup-header">Create a new account:</h2>
+                <form onSubmit={handlesubmit} className="auth-form">
+        <label>Username</label>
+        <input 
+          type="text" 
+          required 
+          value={username} 
+          onChange={(e) => setusername(e.target.value)} 
+        />
+
+        <label>Password</label>
+        <input 
+          type="password" 
+          required 
+          value={password} 
+          onChange={(e) => setpassword(e.target.value)} 
+        />
+
+        <button className="auth-button">Create Account</button>
+      </form>
+            </motion.div>
+    )
 }
 
 export default Signup;
