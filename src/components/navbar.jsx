@@ -13,9 +13,7 @@ const Navbar = ({loggedin,setloggedin}) => {
 
   return (
     <div className="title">
-      <div className="logo">
-      <Link to="/"><h1>ChildCare</h1></Link>
-      </div>
+     
   <div className="navbar">
     <Link to="/"><h1>ChildCare</h1></Link>
     <p><Link to="/">Home</Link></p>
