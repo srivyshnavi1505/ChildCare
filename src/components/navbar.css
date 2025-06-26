@@ -54,7 +54,7 @@
   margin-left: auto;
 }
 .log-button,
-.sign-up-button {
+.sign-up-button, .logout {
   background: #fff5f2;
   color: #a1422d;
   font-weight: 600;
@@ -68,12 +68,12 @@
 }
 
 .log-button:hover,
-.sign-up-button:hover {
+.sign-up-button:hover, .logout:hover {
   background: #ffd3c2;
 }
 
 .log-button button,
-.sign-up-button button {
+.sign-up-button button, .logout button {
   background: none;
   border: none;
   font-size: 0.95rem;
