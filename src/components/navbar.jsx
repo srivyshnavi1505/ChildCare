@@ -13,14 +13,13 @@ const Navbar = ({loggedin,setloggedin}) => {
 
   return (
     <div className="title">
-     
-  <div className="navbar">
-    <Link to="/"><h1>ChildCare</h1></Link>
-    <p><Link to="/">Home</Link></p>
-    <p><Link to="/activities">Activities</Link></p>
-    <p><Link to="/programmes">Programmes</Link></p>
-    {loggedin && <p><Link to="/children">Children</Link></p>}
-  </div>
+      <Link to="/"><h1>ChildCare</h1></Link>
+      <div className="navbar">
+        <p><Link to="/">Home</Link></p>
+        <p><Link to="/activities">Activities</Link></p>
+        <p><Link to="/programmes">Programmes</Link></p>
+        {loggedin && <p><Link to="/children">Children</Link></p>}
+      </div>
 
   <div className="nav-buttons">
     {!loggedin && (
