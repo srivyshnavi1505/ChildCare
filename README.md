@@ -38,6 +38,7 @@ ChildCare Connect is a full-featured NGO platform designed to help non-profits m
 
 ## 📂 Project Structure
 
+```
 ChildCare/
 │
 ├── backend/
@@ -46,11 +47,14 @@ ChildCare/
 │   │   ├── celebration.js
 │   │   └── Children.js
 │   └── server.js
-├── node_modules
+│
+├── node_modules/
+│
 ├── public/
 │   ├── Activities.png
 │   ├── Children.png
 │   └── homepage.png
+│
 ├── src/
 │   ├── assets/
 │   ├── components/
@@ -58,10 +62,12 @@ ChildCare/
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
+│
 ├── index.html
 ├── package-lock.json
 ├── package.json
 └── README.md
+```
 
 
 ## 📸 Screenshots
