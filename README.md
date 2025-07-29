@@ -1,12 +1,73 @@
-# React + Vite
+# 👶 ChildCare Connect – Full-Stack NGO Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ChildCare Connect is a full-featured NGO platform designed to help non-profits manage events, showcase children’s profiles, and enable seamless online donations. It offers a responsive, user-friendly experience with secure authentication, real-time validation, and event planning support.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🔐 **Secure Authentication**  
+  Bcrypt-based login/signup system with proper token management.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🧒 **Children Profiles**  
+  Display child-wise profiles with descriptions and progress updates.
+<!-- - 💰 **Donation Modules**  
+  Intuitive and validated donation forms linked to individual children. -->
+
+- 📆 **Event Calendar**  
+  Interactive calendar to create, manage, and view upcoming NGO events.
+
+- 📱 **Responsive UI**  
+  Built with ReactJS for a smooth and mobile-friendly user experience.
+
+
+## 🛠️ Tech Stack
+
+**Frontend:**  
+- ReactJS  
+- HTML5, CSS3  
+- React Router
+
+**Backend:**  
+- Node.js  
+- Express.js  
+- MongoDB Atlas
+
+**Authentication & Security:**  
+- bcrypt  
+
+
+## 📂 Project Structure
+
+ChildCare/
+│
+├── backend/
+    ├── models/
+        ├── Account.js
+        ├── celebration.js
+        └── Children.js
+    └── server.js
+├── node_modules
+├── public/
+    ├──
+    ├──
+    └──
+├── src/
+    ├── assets/
+    ├── components/
+    ├── pages/
+    ├── App.jsx
+    ├── index.css
+    └── main.jsx
+├── index.html
+├── package-lock.json
+├── package.json
+└── README.md
+
+
+## 📸 Screenshots
+
+![Homepage Preview](./public/homepage.png)
+
+![Activities Preview](./public/Activities.png)
+
+![Children Preview](./public/Children.png)

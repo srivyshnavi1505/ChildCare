@@ -34,16 +34,16 @@ app.get('/', (req, res) => {
 app.get('/newchild', (req, res) => {
     console.log(req.ip, req.url);
     const child = new Children({
-        name: "Abcd",
-        age: 15,
-        gender: "Male",
+        name: "vaishu",
+        age: 16,
+        gender: "Female",
         photo: "url",
         location: "Hyderabad",
-        guardian: "friend's father",
+        guardian: "Warden",
         status: "Orphan",
-        education: "10th class",
+        education: "11th class",
         health: "Fit",
-        hobbies: "crying"
+        hobbies: "Sports"
     });
 
     child.save()
